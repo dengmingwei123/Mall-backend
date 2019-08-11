@@ -17,8 +17,10 @@ import axios from 'axios'
 Vue.use(ElementUI)
 
 // 设置axios的默认值
-axios.default.baseURL = 'http://localhost:8888/api/private/v1/'
-// axios.default.headers.Authorization = localStorage.getItem('mytoken')
+axios.defaults.baseURL = 'http://localhost:8888/api/private/v1/'
+axios.defaults.headers.Authorization = localStorage.getItem('mytoken')
+// 给Vue的原型中添加axios
+Vue.prototype.axios = axios
 
 Vue.config.productionTip = false
 

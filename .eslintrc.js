@@ -22,7 +22,7 @@ module.exports = {
     // allow async-await
     'generator-star-spacing': 'off',
     // allow debugger during development
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
     // 关闭函数名跟括号之间的空格检测
     'space-before-function-paren': 0
   }
